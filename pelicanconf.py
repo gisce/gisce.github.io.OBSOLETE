@@ -8,7 +8,7 @@ SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Madrid'
 
 DEFAULT_LANG = u'ca'
 
@@ -30,6 +30,13 @@ SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 5
+
+MENUITEMS = (
+    ('Projectes', 'projects.html'),
+    ('Projectes', 'projects.html'),
+    ('Projectes', 'projects.html'),
+    ('Projectes', 'projects.html'),
+)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
