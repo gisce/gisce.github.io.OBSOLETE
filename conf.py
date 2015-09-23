@@ -142,7 +142,6 @@ NAVIGATION_LINKS = {
             ), "Serveis"
         ),
         ("/posts/", "Blog"),
-        ("/rss.xml", "RSS feed"),
     ),
     'es': (
         ("/", "Inicio"),
@@ -155,7 +154,6 @@ NAVIGATION_LINKS = {
             "Quines somos"
         ),
         ("/posts/", "Blog"),
-        ("/rss.xml", "RSS feed"),
     ),
 }
 
@@ -199,6 +197,7 @@ POSTS = (
 PAGES = (
     ("pages/*.rst", "pages", "story.tmpl"),
     ("pages/*.txt", "pages", "story.tmpl"),
+    ("pages/index.html", "", "story_header.tmpl"),
     ("pages/*.html", "", "story.tmpl"),
 )
 

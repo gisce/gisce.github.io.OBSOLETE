@@ -11,9 +11,11 @@ ${base.html_headstart()}
 ${template_hooks['extra_head']()}
 </head>
 <body class="homepage">
-<a href="#content" class="sr-only sr-only-focusable">${messages("Skip to main content")}</a>
     <div id="page-wrapper">
-         ${header.html_header()}
+        ${header.html_navigation_links()}
+        <%block name="page_header">
+             ${header.html_header()}
+        </%block>
 
          <div id="main-wrapper">
              <div id="main" class="container">

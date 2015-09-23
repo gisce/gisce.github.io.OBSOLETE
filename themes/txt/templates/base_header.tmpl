@@ -10,9 +10,17 @@
                 ${search_form}
             </div>
         %endif
+        <!--
+        <div id="banner-wrapper">
+            <section id="banner">
+                <h2>Welcome to TXT by HTML5 UP</h2>
+                <p>A free responsive site template built on HTML5, CSS3, skel, and some other stuff</p>
+                <a href="#" class="button">Alright let's go</a>
+            </section>
+        </div>
+        -->
     </header>
     ${template_hooks['page_header']()}
-    ${html_navigation_links()}
 </%def>
 
 <%def name="html_site_title()">
@@ -21,7 +29,7 @@
             <h1><a href="${abs_link(_link("root", None, lang))}" title="${blog_title|h}" rel="home" id="logo">GISCE-TI, S.L.</a></h1>
 
             %if logo_url:
-                <!--<img src="${logo_url}" alt="${blog_title|h}">-->
+                <img src="${logo_url}" alt="${blog_title|h}">
             %endif
             % if show_blog_title:
                 <p id="blog-title">${blog_title|h}</p>
@@ -31,18 +39,21 @@
 </%def>
 
 <%def name="html_navigation_links()">
+    <h2>${permalink}</h2>
     <nav id="nav">
         <ul>
         %for url, text in navigation_links[lang]:
+            <% current_class = "" %>
             % if isinstance(url, tuple):
-            <li><a href="#">${text|h}</a>
+                %for x, j in url:
+                    %if not rel_link(permalink, x):
+                        <% current_class = "current" %>
+                    %endif
+                %endfor
+            <li class="${current_class}"><a href="#">${text|h}</a>
                 <ul>
                 %for suburl, text in url:
-                    % if rel_link(permalink, suburl) == "#":
-                    <li class="current"><a href="${permalink}">${text|h}</a></li>
-                    %else:
                     <li><a href="${suburl}">${text|h}</a></li>
-                    %endif
                 %endfor
                 </ul>
             </li>

@@ -613,9 +613,12 @@
 
 	#main-wrapper {
 		background: #fff;
-		border-top: solid 5px map-get($palette, blue);
 		border-bottom: solid 5px #c1cac5;
 	}
+
+    #header {
+        border-bottom: solid 5px map-get($palette, blue);
+    }
 
 /* Banner */
 
@@ -624,7 +627,7 @@
 		background-color: rgba(21, 28, 23, 0.85);
 		background-image: url('images/overlay.png'), url('images/highlight.png');
 		background-position: top left, center center;
-		background-size: auto, 100% 250%;
+		/*background-size: auto, 100% 250%;*/
 		background-repeat: repeat, no-repeat;
 		text-align: center;
 		margin: 0;
@@ -874,9 +877,9 @@
 			}
 
 			#main-wrapper {
-				border-top-width: 35px;
 				border-bottom-width: 10px;
 			}
+
 
 		/* Header */
 
@@ -889,6 +892,7 @@
 				padding: 5em 0 2em 0;
 				background: #fff;
 				margin: 0 auto;
+                border-bottom-width: 35px;
 
 				.logo {
 					position: relative;
@@ -1129,13 +1133,13 @@
 			}
 
 			#main-wrapper {
-				border-top-width: 20px;
 				border-bottom-width: 10px;
 			}
 
 		/* Header */
 
 			#header {
+                border-bottom-width: 20px;
 				padding: 4em 0 1em 0;
 			}
 
