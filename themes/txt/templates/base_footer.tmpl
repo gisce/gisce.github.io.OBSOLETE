@@ -1,0 +1,48 @@
+## -*- coding: utf-8 -*-
+<%namespace name="base" file="base_helper.tmpl" import="*"/>
+
+<%def name="html_footer()">
+    %if content_footer:
+            <footer id="footer" class="container">
+                <div class="row 200%">
+                    <div class="12u">
+                        <!-- About -->
+                        <section>
+                            <h2 class="major"><span>What's this about?</span></h2>
+                            <p>
+                                This is <strong>TXT</strong>, yet another free responsive site template designed by
+                                <a href="http://n33.co">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
+                                <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
+                                whatever you're working on (personal or commercial), just be sure to give us credit for the design.
+                                That's basically it :)
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="row 200%">
+                    <div class="12u">
+
+                        <!-- Contact -->
+                            <section>
+                                <h2 class="major"><span>Get in touch</span></h2>
+                                <ul class="contact">
+                                    <li><a class="icon fa-github" href="https://github.com/gisce"><span class="label">Facebook</span></a></li>
+                                    <li><a class="icon fa-twitter" href="https://twitter.com/gisce"><span class="label">Twitter</span></a></li>
+                                    <li><a class="icon fa-linkedin" href="http://www.linkedin.com/company/gisce-ti-s-l-"><span class="label">Instagram</span></a></li>
+                                    <li><a class="icon fa-google-plus" href="https://plus.google.com/111949097945736061026"><span class="label">Google+</span></a></li>
+                                </ul>
+                            </section>
+
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                    <div id="copyright">
+                        <ul class="menu">
+                            <li>&copy; GISCE-TI, S.L. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+            ${template_hooks['page_footer']()}
+            </footer>
+    %endif
+</%def>
