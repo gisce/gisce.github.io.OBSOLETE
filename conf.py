@@ -130,11 +130,16 @@ NAVIGATION_LINKS = {
         ("/", "Inici"),
         (
             (
-                ("/stories/internals", u"La nostra història"),
+                ("/pages/la-nostra-historia", u"La nostra història"),
                 ("", u"La nostra missió"),
                 ("", "El nostre equip")
-            ),
-            "Qui som"
+            ), "Qui som"
+        ),
+        (
+            (
+                ("/pages/serveis-sector-electric", "Sector elèctric"),
+                ("/pages/serveis-a-mida", "A mida")
+            ), "Serveis"
         ),
         ("/posts/", "Blog"),
         ("/rss.xml", "RSS feed"),
@@ -192,8 +197,9 @@ POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
+    ("pages/*.rst", "pages", "story.tmpl"),
+    ("pages/*.txt", "pages", "story.tmpl"),
+    ("pages/*.html", "", "story.tmpl"),
 )
 
 
@@ -293,11 +299,11 @@ COMPILERS = {
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-#LOGO_URL = '/images/gisce_bola.png'
+LOGO_URL = '/images/gisce_bola.png'
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
-# SHOW_BLOG_TITLE = True
+SHOW_BLOG_TITLE = False
 
 # Writes tag cloud data in form of tag_cloud_data.json.
 # Warning: this option will change its default value to False in v8!
@@ -474,7 +480,7 @@ HIDDEN_AUTHORS = ['Guest']
 
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
-# INDEX_PATH = ""
+INDEX_PATH = "posts"
 
 # Create per-month archives instead of per-year
 # CREATE_MONTHLY_ARCHIVE = False

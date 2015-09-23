@@ -385,7 +385,7 @@
 					top: -10px;
 
 					a {
-						background: #b9d2ce;
+						background: lighten(map-get($palette, blue), 20%);
 					}
 				}
 			}
