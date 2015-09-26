@@ -47,6 +47,10 @@
 <%def name="html_navigation_links()">
     <h2>${permalink}</h2>
     <nav id="nav">
+      <div class="mini-logo">
+        <img src="${logo_url}" alt="GISCE-TI, S.L." class="logo" >
+        <span style="">GISCE-TI, S.L.</span>
+      </div>
         <ul>
         %for url, text in navigation_links[lang]:
             <% current_class = "" %>

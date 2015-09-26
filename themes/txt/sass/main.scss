@@ -963,6 +963,27 @@
 				ul {
 					position: relative;
 					z-index: 1001;
+					float: left;
+					margin: auto;
+					width: 65%;
+				}
+				.mini-logo{
+		  		float: left;
+		  		padding-left: 2em;
+
+					.logo {
+						width: 2.25em;
+					  float: left;
+					  padding-top: 0.4em;
+					}
+					span {
+						padding-right: 30px;
+					  line-height: 100%;
+					  width: 9em;
+					  float: left;
+					  padding-top: 1.2em;
+					  padding-left: 0em;
+					}
 				}
 
 				li {
