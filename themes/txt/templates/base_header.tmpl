@@ -26,14 +26,20 @@
 <%def name="html_site_title()">
     <div class="logo container">
         <div>
+            %if logo_url:
+                <img src="${logo_url}" alt="${blog_title|h}" class="logo_image">
+            %endif
             <h1><a href="${abs_link(_link("root", None, lang))}" title="${blog_title|h}" rel="home" id="logo">GISCE-TI, S.L.</a></h1>
 
-            %if logo_url:
-                <img src="${logo_url}" alt="${blog_title|h}">
-            %endif
             % if show_blog_title:
                 <p id="blog-title">${blog_title|h}</p>
             % endif
+            <header>
+                <h2>Cobrim totes les necessitats del sector elèctric</h2>
+                <p class="txt-head">El principal objectiu de GISCE-TI és el desenvolupament de programari
+                  que proporcioni solució a les seves necessitats de gestió i integrar les seves diverses utilitats d'una manera que puguin retroalimentar i facilitar així el seu treball.</p>
+                <!--<p>And some text that attempts to explain their significance</p>-->
+            </header>
         </div>
     </div>
 </%def>

@@ -716,7 +716,7 @@
 				font-size: 1.65em;
 
 				&.major {
-					font-size: 1.65em;
+					font-size: 2em;
 					text-align: center;
 					margin: 0 0 3em 0;
 
@@ -763,10 +763,15 @@
 					.special {
 						margin: 0 0 4em 0;
 					}
+					p.txt-description{
+						font-size: 1.2em;
+						font-family: 'Open Sans';
+						font-weight: 100;
+					}
 
 					h2 {
-						font-size: 3em;
-						margin: 0 0 0.75em 0;
+						font-size: 1.5em;
+						margin: 0.5em 0 0.75em 0;
 					}
 
 					header {
@@ -889,7 +894,7 @@
 				font-family: 'Open Sans Condensed', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
-				padding: 5em 0 2em 0;
+				padding: 3em 0 2em 0;
 				background: #fff;
 				margin: 0 auto;
                 border-bottom-width: 35px;
@@ -897,7 +902,6 @@
 				.logo {
 					position: relative;
 					text-align: center;
-					border-top: solid 5px #e7eae8;
 
 					div {
 						background: #fff;
@@ -907,13 +911,33 @@
 						top: -0.65em;
 					}
 
+					img{
+						width: 150px;
+						margin-bottom: 0.7em;
+					}
+
 					h1 {
-						display: inline;
+						/*display: inline;*/
+						font-size: 1.5em;
+						margin-bottom: 1em;
+					}
+					h2 {
+						font-size: 1.1em;
+						text-transform: none;
+						color: #428bca;
 					}
 
 					p {
 						display: inline;
 						color: #C1CAC5;
+					}
+					.txt-head{
+							color: #6b7770;
+							text-transform: none;
+							font-size: 0.6em;
+							line-height: 130%;
+							font-family: 'Open Sans';
+							font-weight: 100;
 					}
 				}
 			}
@@ -1075,7 +1099,7 @@
 			/* Main */
 
 				#main {
-					padding: 6em 0 6em 0;
+					padding: 5em 0 6em 0;
 				}
 
 			/* Footer */
@@ -1318,9 +1342,9 @@
 			.box {
 				&.highlight {
 					h2 {
-						font-size: 2.25em;
+						font-size: 1.1em;
 						line-height: 1.25em;
-						margin: 0 0 0.5em 0;
+						margin: 0.3em 0 0.5em 0;
 					}
 
 					header {
