@@ -141,7 +141,7 @@ NAVIGATION_LINKS = {
                 ("/pages/serveis-a-mida", "A mida")
             ), "Serveis"
         ),
-        ("/posts/", "Blog"),
+        #("/posts/", "Blog"),
     ),
     'es': (
         ("/", "Inicio"),
@@ -153,7 +153,7 @@ NAVIGATION_LINKS = {
             ),
             "Quines somos"
         ),
-        ("/posts/", "Blog"),
+        #("/posts/", "Blog"),
     ),
 }
 
