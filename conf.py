@@ -131,8 +131,8 @@ NAVIGATION_LINKS = {
         (
             (
                 ("/pages/la-nostra-historia", u"La nostra història"),
-                ("", u"La nostra missió"),
-                ("", "El nostre equip")
+                ("/pages/la-nostra-missio", u"La nostra missió"),
+                ("/pages/el-nostre-equip", "El nostre equip")
             ), "Qui som"
         ),
         (
@@ -141,7 +141,14 @@ NAVIGATION_LINKS = {
                 ("/pages/serveis-a-mida", "A mida")
             ), "Serveis"
         ),
-        #("/posts/", "Blog"),
+        (
+            (
+                ("/pages/treballa-amb-nosaltres", "Treballa amb nosaltres"),
+                ("/pages/practiques-amb-nosaltres", "Fes les pràctiques")
+            ), "RRHH"
+        ),
+        ("/posts/", "Blog"),
+        ("/pages/contacte", "Contacte")
     ),
     'es': (
         ("/", "Inicio"),
