@@ -150,12 +150,16 @@
 /* Section/Article */
 
 	section, article {
-		margin-bottom: 6em;
+		margin-bottom: 4em;
 
 		> :last-child,
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+        h2 {
+          margin-top: 2em;
+        }
 	}
 
 	header {

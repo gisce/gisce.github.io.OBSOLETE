@@ -130,15 +130,17 @@ NAVIGATION_LINKS = {
         ("/", "Inici"),
         (
             (
-                ("/pages/la-nostra-historia", u"La nostra història"),
-                ("/pages/la-nostra-missio", u"La nostra missió"),
-                ("/pages/el-nostre-equip", "El nostre equip")
+                ("/pages/qui-som", u"La nostra història"),
+                ("/pages/qui-som/#el-nostre-objectiu", u"El nostre objectiu"),
+                ("/pages/qui-som/#el-nostre-equip", "El nostre equip")
             ), "Qui som"
         ),
         (
             (
-                ("/pages/serveis-sector-electric", "Sector elèctric"),
-                ("/pages/serveis-a-mida", "A mida")
+                ("/pages/serveis-gis", "GIS"),
+                ("/pages/serveis-erp", "ERP"),
+                ("/pages/serveis-distribucio", "Distribució"),
+                ("/pages/serveis-comercialitzacio", "Comercialització")
             ), "Serveis"
         ),
         (
@@ -147,8 +149,8 @@ NAVIGATION_LINKS = {
                 ("/pages/practiques-amb-nosaltres", "Fes les pràctiques")
             ), "RRHH"
         ),
-        ("/posts/", "Blog"),
-        ("/pages/contacte", "Contacte")
+        #("/posts/", "Blog"),
+        ("/pages/contacte/", "Contacte")
     ),
     'es': (
         ("/", "Inicio"),
@@ -205,7 +207,7 @@ PAGES = (
     ("pages/*.rst", "pages", "story.tmpl"),
     ("pages/*.txt", "pages", "story.tmpl"),
     ("pages/index.html", "", "story_header.tmpl"),
-    ("pages/*.html", "", "story.tmpl"),
+    ("pages/*.html", "pages", "story.tmpl"),
 )
 
 

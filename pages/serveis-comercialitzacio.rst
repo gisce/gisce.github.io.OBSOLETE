@@ -7,4 +7,22 @@
 .. description: 
 .. type: text
 
-Write your page here.
+Principals característiques
+---------------------------
+
+.. class:: default
+
+* Gestió de contractes
+* Facturació
+* Factures de drets de contractació
+* Remeses bancàreies
+* Gestió de cobraments i impagaments
+* Pagaments a proveïdors
+* Gestió ATR (XML) amb distribuidores
+* Informes oficials REE, CNMC, AEAT
+* Compra energia en el pool
+* Oficina virtual
+* Factura E-Mail
+* Factura electrònica (Factura-e)
+* Sincronització amb distribuidora pròpia
+

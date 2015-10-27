@@ -44,3 +44,8 @@ Georeferenciació dels següents elements:
 * Interfície web adaptable a escriptori, tables i mòbil
 * Simulacions
 * Xarxa de telecomunicacions
+
+
+.. raw:: html
+
+    <a href="/pages/contacte" class="button alt big">Contacte</a>
