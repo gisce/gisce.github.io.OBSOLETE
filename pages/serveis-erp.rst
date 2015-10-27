@@ -16,6 +16,10 @@ Sistema vertical per les empreses del sector elèctric, distribuidores i
 comercialitzadores que abarca totes les necessitats dels departaments. Des
 d'atenció al client, gestió de contractes, gestió ATRs, facturació i telegestió.
 
+Permet donar compliment a les solicituds d'intercanvi de informació per part de l'administració
+i amb tots els agents del sistema eléctric de forma bidireccional, REE,
+CNMC, Ministeri d'energia indústria i turisme, a traves dels fitxers d'intercanvi definits
+
 
 Principals característiques
 ---------------------------
