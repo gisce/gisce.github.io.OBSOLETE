@@ -1192,6 +1192,12 @@
 				}
 			}
 
+			h1 {
+			  &.entry-title{
+				  margin-top: 1.5em;
+			  }
+			}
+
 		/* Wrappers */
 
 			#banner-wrapper {
@@ -1284,7 +1290,11 @@
 				font-size: 1.5em;
 				margin: 0 0 0.5em 0;
 			}
-
+			h1 {
+			  &.entry-title{
+				  margin-top: 1.5em;
+			  }
+			}
 			h2 {
 				&.major {
 					text-align: left;
